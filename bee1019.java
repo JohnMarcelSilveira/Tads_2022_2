@@ -11,9 +11,13 @@ public class bee1019 {
 
         hora = entrada/3600;
 
+        if(hora > 0) entrada = entrada - hora*3600; 
+
         minuto = entrada/60;
 
-        segundo = entrada%60;         
+        if(minuto > 0) entrada = entrada - minuto * 60;
+
+        segundo = entrada;         
 
         System.out.println(hora+":"+minuto+":"+segundo);
         in.close();
