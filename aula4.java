@@ -12,8 +12,11 @@ public class aula4 {
 
         System.out.println(a/b);
         System.out.println(c);
+        System.out.println(c);
 
     }
     
 }
 
+//git config --global user.email "marcel-eu@hotmail.com"
+//git config --global user.name "Marcel Silveira"
