@@ -1,4 +1,4 @@
-package LGP.Aulas;
+package Aulas;
 
 import java.util.Scanner;
 
