@@ -6,17 +6,24 @@ import java.util.Scanner;
 public class L02Ex06 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String dataNascimento,dia,mes,ano;
         String[] dataNascimentoSplit;
+        //String dataNascimento,dia,mes,ano;
+        int dataNascimento,dia,mes,ano;
         
 
-        System.out.print("Digite o data de nascimento:");
-        dia = in.next();
+        System.out.print("Digite o dia de nascimento:");
+        dia = in.nextInt();
         System.out.print("Digite o mês de nascimento:");
-        mes = in.next();
+        mes = in.nextInt();
         System.out.print("Digite o ano de nascimento:");       
-        ano = in.next();
+        ano = in.nextInt();
 
-        //Calendar calendario = Calendar
+        Calendar calendario = Calendar.getInstance();
+        Calendar dataUsuario = Calendar.getInstance();
+        dataUsuario.set(ano, Calendar.MONTH,dia);
+
+        dataNascimento =  dataUsuario.compareTo(calendario);
+
+        System.out.println(dataNascimento);
     }
 }
