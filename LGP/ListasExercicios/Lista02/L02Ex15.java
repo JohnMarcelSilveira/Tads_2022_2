@@ -26,12 +26,12 @@ public class L02Ex15 {
 
         if(minutoInicio>minutofim){
             tempoDeJogoMinuto = (60 - minutoInicio) + minutofim;
-            tempoDeJogoHora -= 1;
+            tempoDeJogoHora --;
         }else{
             tempoDeJogoMinuto = minutofim - minutoInicio;
         }
 
-        System.out.println("O jogo durou " + tempoDeJogoHora + "hora(s) e " + tempoDeJogoMinuto + " segundos");
+        System.out.println("O jogo durou " + tempoDeJogoHora + " hora(s) e " + tempoDeJogoMinuto + " segundos");
 
     }
 }
