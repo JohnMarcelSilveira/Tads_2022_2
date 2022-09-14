@@ -1,3 +1,4 @@
+package Provas.Avaliacao_1;
 import java.util.Scanner;
 
 public class Ex05 {
