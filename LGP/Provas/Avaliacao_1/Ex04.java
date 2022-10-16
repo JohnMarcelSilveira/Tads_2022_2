@@ -8,6 +8,10 @@ public class Ex04 {
         int interacoes,contador;
         double valorDePi,denominador,denominadorFinal;
 
+        boolean a;
+
+        a = Par(2);
+
         contador =  0;
         denominador = 1;  
         valorDePi  = denominadorFinal = 0f;       
@@ -15,7 +19,7 @@ public class Ex04 {
         System.out.println("Quantas interações serão feitas?");
         interacoes = in.nextInt();
 
-        while(contador<(interacoes-1)){
+       /*  while(contador<(interacoes-1)){
             contador++;
             if(contador == 1){
                 denominadorFinal = -2f;
@@ -28,9 +32,43 @@ public class Ex04 {
             }
             denominador +=2;
         }
+        */
 
-        valorDePi = 4f*(1f/denominadorFinal);
+        while(contador<(interacoes-1)){
+            contador++;
+            if(contador == 1){
+                denominadorFinal = denominador * (denominador+2);
+                valorDePi += (denominador + denominadorFinal) / (denominador * denominadorFinal);
+                denominador = 3f;
+
+            }            
+            if(contador%2==0){                
+                denominadorFinal +=denominador;
+                valorDePi += (denominador + denominadorFinal) / (denominador * denominadorFinal);valorDePi = denominador + denominadorFinal / denominador * denominadorFinal;
+            }else if(contador > 1){                
+                denominadorFinal += -1f*denominador;
+                valorDePi += (denominador + denominadorFinal) / (denominador * denominadorFinal);valorDePi = denominador + denominadorFinal / denominador * denominadorFinal;
+            }
+            denominador +=2;
+            
+        }
+
+        valorDePi = 4f*(valorDePi);
 
         System.out.println("O valor de Pi deveria ser " + valorDePi + " mas infelizmentes dessa vez não deu!");
     }
+
+
+
+    private static boolean Par(int numeroA) {
+        boolean par;
+
+        par = numeroA%2==0;
+
+        return par;
+        
+    }
+
 }
+
+
