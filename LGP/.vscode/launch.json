@@ -1,0 +1,651 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch L01Ex01",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista01.L01Ex01",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L01Ex02",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista01.L01Ex02",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L01Ex03",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista01.L01Ex03",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L01Ex04",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista01.L01Ex04",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L01Ex05",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista01.L01Ex05",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L01Ex06",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista01.L01Ex06",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L01Ex07",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista01.L01Ex07",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L01Ex08",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista01.L01Ex08",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L01Ex09",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista01.L01Ex09",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L01Ex10",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista01.L01Ex10",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex01",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex01",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex02",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex02",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex03",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex03",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex04",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex04",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex05",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex05",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex06",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex06",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex07",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex07",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex08",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex08",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex09",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex09",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex10",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex10",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex11",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex11",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex12",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex12",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex13",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex13",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex14",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex14",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex15",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex15",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex16",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex16",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex17",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex17",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex18",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex18",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex19",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex19",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex20",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex20",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex22",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex22",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex23",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex23",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02Ex25",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista02.L02Ex25",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L03Ex03",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista03.L03Ex03",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L03Ex05",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista03.L03Ex05",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L03Ex06",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista03.L03Ex06",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L03Ex07",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista03.L03Ex07",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L03Ex08",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista03.L03Ex08",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L03Ex10",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista03.L03Ex10",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L04Ex01",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista04.L04Ex01",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L04Ex02",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista04.L04Ex02",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L04Ex04",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista04.L04Ex04",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L04Ex05",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista04.L04Ex05",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L04Ex08",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista04.L04Ex08",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L04Ex09",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista04.L04Ex09",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L04Ex12",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista04.L04Ex12",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L04Ex13",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista04.L04Ex13",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L04Ex15",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista04.L04Ex15",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch L04Ex20",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista04.L04Ex20",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex01L08",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista08.Ex01L08",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex02L08",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista08.Ex02L08",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex03L08",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista08.Ex03L08",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex04L08",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista08.Ex04L08",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex05L08",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista08.Ex05L08",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex06L08",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista08.Ex06L08",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex07L08",
+            "request": "launch",
+            "mainClass": "ListasExercicios.Lista08.Ex07L08",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex01",
+            "request": "launch",
+            "mainClass": "Provas.Avaliacao_1.Ex01",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex02",
+            "request": "launch",
+            "mainClass": "Provas.Avaliacao_1.Ex02",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex03",
+            "request": "launch",
+            "mainClass": "Provas.Avaliacao_1.Ex03",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex04",
+            "request": "launch",
+            "mainClass": "Provas.Avaliacao_1.Ex04",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex05",
+            "request": "launch",
+            "mainClass": "Provas.Avaliacao_1.Ex05",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch aula4",
+            "request": "launch",
+            "mainClass": "aula4",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch aula6",
+            "request": "launch",
+            "mainClass": "aula6",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1001",
+            "request": "launch",
+            "mainClass": "bee1001",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1002",
+            "request": "launch",
+            "mainClass": "bee1002",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1003",
+            "request": "launch",
+            "mainClass": "bee1003",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1004",
+            "request": "launch",
+            "mainClass": "bee1004",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1005",
+            "request": "launch",
+            "mainClass": "bee1005",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1005a",
+            "request": "launch",
+            "mainClass": "bee1005a",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1006",
+            "request": "launch",
+            "mainClass": "bee1006",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1007",
+            "request": "launch",
+            "mainClass": "bee1007",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1008",
+            "request": "launch",
+            "mainClass": "bee1008",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1009",
+            "request": "launch",
+            "mainClass": "bee1009",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1010",
+            "request": "launch",
+            "mainClass": "bee1010",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1011",
+            "request": "launch",
+            "mainClass": "bee1011",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1012",
+            "request": "launch",
+            "mainClass": "bee1012",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1013",
+            "request": "launch",
+            "mainClass": "bee1013",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1014",
+            "request": "launch",
+            "mainClass": "bee1014",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1015",
+            "request": "launch",
+            "mainClass": "bee1015",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1016",
+            "request": "launch",
+            "mainClass": "bee1016",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1017",
+            "request": "launch",
+            "mainClass": "bee1017",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1019",
+            "request": "launch",
+            "mainClass": "bee1019",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1020",
+            "request": "launch",
+            "mainClass": "bee1020",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1035",
+            "request": "launch",
+            "mainClass": "bee1035",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee1067",
+            "request": "launch",
+            "mainClass": "bee1067",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch bee2006",
+            "request": "launch",
+            "mainClass": "bee2006",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex01",
+            "request": "launch",
+            "mainClass": "ex01",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex02",
+            "request": "launch",
+            "mainClass": "ex02",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex03",
+            "request": "launch",
+            "mainClass": "ex03",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex04",
+            "request": "launch",
+            "mainClass": "ex04",
+            "projectName": "LGP_29292de8"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex05",
+            "request": "launch",
+            "mainClass": "ex05",
+            "projectName": "LGP_29292de8"
+        }
+    ]
+}
