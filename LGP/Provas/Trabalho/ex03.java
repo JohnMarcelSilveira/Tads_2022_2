@@ -23,9 +23,9 @@ public class ex03 extends JFrame {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
-        jogoDaVelha velha = new jogoDaVelha();
-        velha.setBounds(0, 0, 600, 600);
-        frame.add(velha);
+        diagonais diagonal = new diagonais();
+        diagonal.setBounds(0, 0, 600, 600);
+        frame.add(diagonal);
 
         /*
          * int numero = 8;
