@@ -14,8 +14,6 @@ andando com as diagonais). Por exemplo, em uma matriz 4x4:
 
 import javax.swing.JFrame;
 
-import javax.swing.JTextArea;
-
 public class ex03 extends JFrame {
     public static void main(String[] args) {
 
@@ -28,12 +26,6 @@ public class ex03 extends JFrame {
         jogoDaVelha velha = new jogoDaVelha();
         velha.setBounds(0, 0, 600, 600);
         frame.add(velha);
-
-        // ex03 janela = new ex03();
-        // janela.setBounds(0,0,600,600);
-        // janela.add(paintComponent(getGraphics()));
-        /// janela.setSize(640,480);
-        // janela.setVisible(true);
 
         /*
          * int numero = 8;
@@ -124,24 +116,4 @@ public class ex03 extends JFrame {
 
         return matriz;
     }
-
-    // parte grafica
-
-    private JTextArea texto = new JTextArea();
-
-    public ex03() {
-        // Define o título da janela
-        super("Exercicio 3 Logica");
-        this.montaJanela();
-    }
-
-    private void montaJanela() {
-        this.getContentPane().add(texto);
-        this.setSize(600, 600);
-        this.setLocationRelativeTo(null);
-        this.setDefaultCloseOperation(this.EXIT_ON_CLOSE);
-        this.setVisible(true);
-        // this.getContentPane().add(texto);
-    }
-
 }

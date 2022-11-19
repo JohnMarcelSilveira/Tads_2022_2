@@ -3,18 +3,23 @@ import javax.swing.JPanel;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class jogoDaVelha extends JPanel {
+public class diagonais extends JPanel implements Runnable {
 
     int numero;
     int mat[][];
+    // Font minhaFonte = new Font("Consolas", Font.BOLD, 20);
 
-    public jogoDaVelha() {
+    public diagonais() {
         numero = 8;
         mat = new int[numero][numero];
+        mat = preencherMatriz(numero);
+        Thread laco = new Thread(this);
+        laco.start();
     }
 
     @Override
     public void paintComponent(Graphics g) {
+        super.paintComponent(g); // limpar a tela;
         g.setColor(Color.WHITE);
         g.fillRect(0, 0, 600, 600);
 
@@ -22,7 +27,7 @@ public class jogoDaVelha extends JPanel {
 
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat[i].length; j++) {
-                g.drawString("" + mat[i][j], 50 + j * 50, 50 + i * 50);
+                g.drawString("" + mat[i][j], 50 + j * 20, 50 + i * 20);
             }
         }
 
@@ -97,11 +102,31 @@ public class jogoDaVelha extends JPanel {
                     matriz[i][j] = matriz[i - 1][j] + 1;
                 else
                     matriz[i][j] = 1;
-
             }
         }
 
         return matriz;
+    }
+
+    public void run() {
+        while (true) {
+            update();
+            repaint();
+            dorme();
+        }
+    }
+
+    private void update() {
+        manipulaMatriz(mat);
+    }
+
+    private void dorme() {
+        try {
+            Thread.sleep(550);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 
 }
