@@ -2,14 +2,21 @@ import javax.swing.JPanel;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.event.*;
+import java.awt.*;
+import javax.swing.*;
 
-public class diagonais extends JPanel implements Runnable {
+public class diagonais extends JPanel implements Runnable, ActionListener {
 
     int numero;
     int mat[][];
-    // Font minhaFonte = new Font("Consolas", Font.BOLD, 20);
+    Font minhaFonte = new Font("Consolas", Font.BOLD, 20);
+    JButton botao4;
+    JButton botao6;
+    JButton botao8;
 
     public diagonais() {
+        propriedadesBotao();
         numero = 8;
         mat = new int[numero][numero];
         mat = preencherMatriz(numero);
@@ -17,31 +24,28 @@ public class diagonais extends JPanel implements Runnable {
         laco.start();
     }
 
+    // #region parte logica
+
     @Override
     public void paintComponent(Graphics g) {
-        super.paintComponent(g); // limpar a tela;
+        // super.paintComponent(g); // limpar a tela;
         g.setColor(Color.WHITE);
-        g.fillRect(0, 0, 600, 600);
+        g.fillRect(0, 50, 600, 600);
 
         g.setColor(Color.BLACK);
+        g.setFont(minhaFonte);
 
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat[i].length; j++) {
-                g.drawString("" + mat[i][j], 50 + j * 20, 50 + i * 20);
+                if (mat[i][j] % 2 == 0) {
+                    g.setColor(Color.RED);
+                } else {
+                    g.setColor(Color.BLACK);
+                }
+                g.drawString("" + mat[i][j], 50 + j * 20, 100 + i * 20);
             }
         }
 
-    }
-
-    // parte logica
-
-    static void mostrarMatriz(int[][] matriz) {
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                System.out.print(matriz[i][j] + " ");
-            }
-            System.out.println("");
-        }
     }
 
     /*
@@ -108,6 +112,12 @@ public class diagonais extends JPanel implements Runnable {
         return matriz;
     }
 
+    // #endregion
+
+    // #region Funções de Thread
+
+    // #region Run
+    // essa função deve ser implementada para manipular a Thread
     public void run() {
         while (true) {
             update();
@@ -115,18 +125,58 @@ public class diagonais extends JPanel implements Runnable {
             dorme();
         }
     }
+    // #endregion
 
+    // #region Update
+    // atualuza a matriz
     private void update() {
         manipulaMatriz(mat);
     }
+    // #endregion
 
+    // #region Dorme
+    // essa função serve para dar um timer ao atualizar a tela e ficar mais suave as
+    // trasições entre as matrizes
     private void dorme() {
         try {
-            Thread.sleep(550);
+            Thread.sleep(950);
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
+    // #endregion
+    // #endregion
 
+    // #region botão
+
+    public void propriedadesBotao() {
+        // monta o botão
+        botao4 = new JButton("4");
+        botao6 = new JButton("6");
+        botao8 = new JButton("8");
+        // dimensões
+        botao4.setBounds(0, 0, 100, 20);
+        botao6.setBounds(110, 0, 100, 20);
+        botao8.setBounds(220, 0, 100, 20);
+        // Adiciona o botao ao frame
+        this.add(botao4);
+        this.add(botao6);
+        this.add(botao8);
+        // Adiciona o evento ao botao
+        botao4.addActionListener((ActionListener) this);
+        botao6.addActionListener((ActionListener) this);
+        botao8.addActionListener((ActionListener) this);
+    }
+
+    public void actionPerformed(ActionEvent e) {
+        if (botao4.getModel().isArmed())
+            numero = 4;
+        if (botao6.getModel().isArmed())
+            numero = 6;
+        if (botao8.getModel().isArmed())
+            numero = 8;
+        mat = new int[numero][numero];
+        mat = preencherMatriz(numero);
+    }
+    // #endregion
 }
