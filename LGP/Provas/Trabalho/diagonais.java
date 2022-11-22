@@ -42,7 +42,7 @@ public class diagonais extends JPanel implements Runnable, ActionListener {
                 } else {
                     g.setColor(Color.BLACK);
                 }
-                g.drawString("" + mat[i][j], 50 + j * 20, 100 + i * 20);
+                g.drawString("" + mat[i][j], 50 + j * 20, 100 + i * 20);                
             }
         }
 
