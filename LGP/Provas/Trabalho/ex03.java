@@ -14,7 +14,6 @@ andando com as diagonais). Por exemplo, em uma matriz 4x4:
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.event.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -22,18 +21,6 @@ public class ex03 extends JFrame implements ActionListener {
 
     private static JButton btnExercicio2;
     private static JButton btnExercicio3;
-
-    public ex03() {
-
-        btnExercicio2.setBounds(0, 0, 20, 20);
-        btnExercicio3.setBounds(30, 30, 20, 20);
-
-        this.add(btnExercicio2);
-        this.add(btnExercicio3);
-
-        btnExercicio2.setVisible(true);
-        btnExercicio3.setVisible(true);
-    }
 
     public static void main(String[] args) {
 
@@ -44,9 +31,17 @@ public class ex03 extends JFrame implements ActionListener {
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
-       
 
+        btnExercicio2.setBounds(20, 20, 20, 20);
+        btnExercicio3.setBounds(30, 30, 20, 20);
+
+        frame.add(btnExercicio2);
+        frame.add(btnExercicio3);
+
+        btnExercicio2.setVisible(true);
+        btnExercicio3.setVisible(true);
+
+        frame.setVisible(true);
         ActionListener al = new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 if (btnExercicio3.getModel().isArmed()) {
@@ -55,34 +50,34 @@ public class ex03 extends JFrame implements ActionListener {
                     diagonal.setBounds(0, 0, 600, 600);
                     frame.add(diagonal);
                 }
+                if (btnExercicio2.getModel().isArmed()) {
+                    System.out.println("entrei aqui botao exercicio 2.");
+                    quadrado quadrado = new quadrado();
+                    quadrado.setBounds(0, 0, 600, 600);
+                    frame.add(quadrado);
+                }
             }
         };
 
-        // btnExercicio3.addActionListener(al);
-        // btnExercicio3.addActionListener(al);
-
-        quadrado quadrado = new quadrado();
-        quadrado.setBounds(0, 0, 600, 600);
-        frame.add(quadrado);
-
-        /*
-         * diagonais diagonal = new diagonais();
-         * diagonal.setBounds(0, 0, 600, 600);
-         * frame.add(diagonal);
-         */
+        btnExercicio2.addActionListener(al);
+        btnExercicio3.addActionListener(al);
 
     }
 
-    @Override
     public void actionPerformed(ActionEvent e) {
-        /*
-         * if (btnExercicio3.getModel().isArmed()) {
-         * System.out.println("entrei aqui.");
-         * diagonais diagonal = new diagonais();
-         * diagonal.setBounds(0, 0, 600, 600);
-         * this.add(diagonal);
-         * }
-         */
-    }
+        if (btnExercicio3.getModel().isArmed()) {
+            System.out.println("entrei aqui botao exercicio 3.");
+            diagonais diagonal = new diagonais();
+            diagonal.setBounds(0, 0, 600, 600);
+            this.add(diagonal);
+        }
 
+        if (btnExercicio2.getModel().isArmed()) {
+            System.out.println("entrei aqui botao exercicio 2.");
+            quadrado quadrado = new quadrado();
+            quadrado.setBounds(0, 0, 600, 600);
+            this.add(quadrado);
+        }
+
+    }
 }
