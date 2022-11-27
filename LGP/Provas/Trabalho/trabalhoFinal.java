@@ -16,8 +16,9 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.FlowLayout;
 
-public class ex03 extends JFrame implements ActionListener {
+public class trabalhoFinal extends JFrame implements ActionListener {
 
     private static JButton btnExercicio2;
     private static JButton btnExercicio3;
@@ -31,9 +32,10 @@ public class ex03 extends JFrame implements ActionListener {
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(null);
 
-        btnExercicio2.setBounds(20, 20, 20, 20);
-        btnExercicio3.setBounds(30, 30, 20, 20);
+        btnExercicio2.setBounds(20, 20, 100, 20);
+        btnExercicio3.setBounds(20, 100, 100, 20);
 
         frame.add(btnExercicio2);
         frame.add(btnExercicio3);
@@ -65,12 +67,6 @@ public class ex03 extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-        if (btnExercicio3.getModel().isArmed()) {
-            System.out.println("entrei aqui botao exercicio 3.");
-            diagonais diagonal = new diagonais();
-            diagonal.setBounds(0, 0, 600, 600);
-            this.add(diagonal);
-        }
 
         if (btnExercicio2.getModel().isArmed()) {
             System.out.println("entrei aqui botao exercicio 2.");
@@ -79,5 +75,11 @@ public class ex03 extends JFrame implements ActionListener {
             this.add(quadrado);
         }
 
+        if (btnExercicio3.getModel().isArmed()) {
+            System.out.println("entrei aqui botao exercicio 3.");
+            diagonais diagonal = new diagonais();
+            diagonal.setBounds(0, 0, 600, 600);
+            this.add(diagonal);
+        }
     }
 }

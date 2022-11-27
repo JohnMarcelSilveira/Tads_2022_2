@@ -52,20 +52,21 @@ public class quadrado extends JPanel implements Runnable, ActionListener {
 
     private static void movimentaQuadradoDireita(int[][] mat) {
         boolean continua = true;
+        boolean puleiAlinha = false;
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat[i].length; j++) {
                 if (mat[i][j] > 0 && continua) {
-                    if (j == mat[i].length - 2 && i < mat.length) {
+                    if (j == mat[i].length - 2 && i < mat.length - 2) {
                         mat[i][j] = 0;
                         mat[i][j + 1] = 0;
                         mat[i + 1][j] = 0;
                         mat[i + 1][j + 1] = 0;
-                        System.out.println("ta aqui");
                         resetaPosicaoQuadradoPraBaixo(mat, i + 1);
                         continua = false;
+                        puleiAlinha = true;
                         // esse else é para não dar estouro de campo na mat e poder atender um dos
                         // requisitos do exercicio que é continuar apesar dos limites
-                    } else if (i < mat.length) {
+                    } else if (i < mat.length && !puleiAlinha && j < mat[i].length - 2) {
                         mat[i][j + 2] = numero;
                         mat[i][j] = 0;
                         continua = false;
@@ -126,8 +127,7 @@ public class quadrado extends JPanel implements Runnable, ActionListener {
             mat[linhaAtual][i] = numero;
             mat[linhaAtual + 1][i] = numero;
         }
-        mostraMtariz(mat);
-        System.out.println();
+
     }
 
     private static void resetaPosicaoQuadradoPraCima(int[][] mat, int linhaAtual) {
@@ -135,31 +135,31 @@ public class quadrado extends JPanel implements Runnable, ActionListener {
         int lin = linCol[0];
         int col = linCol[1];
         int tamanhoVertical = mat[0].length - 1;
+        if (lin >= 2) {
+            // zera posições
+            mat[lin][col] = 0;
+            mat[lin - 1][col] = 0;
+            mat[lin - 1][col - 1] = 0;
+            mat[lin][col - 1] = 0;
 
-        // zera posições
-        mat[lin][col] = 0;
-        mat[lin - 1][col] = 0;
-        mat[lin - 1][col - 1] = 0;
-        mat[lin][col - 1] = 0;
+            // preenche as posições em cima
 
-        // preenche as posições em cima
-        mat[lin - 2][tamanhoVertical] = numero;
-        mat[lin - 1][tamanhoVertical] = numero;
-        mat[lin - 2][tamanhoVertical - 1] = numero;
-        mat[lin - 1][tamanhoVertical - 1] = numero;
+            mat[lin - 2][tamanhoVertical] = numero;
+            mat[lin - 1][tamanhoVertical] = numero;
+            mat[lin - 2][tamanhoVertical - 1] = numero;
+            mat[lin - 1][tamanhoVertical - 1] = numero;
+        }
+    }
 
-        /*
-         * for (int i = 0; i < 2; i++) {
-         * mat[linhaAtual][i] = numero;
-         * mat[linhaAtual + 1][i] = numero;
-         * }
-         */
-        mostraMtariz(mat);
-        System.out.println();
+    private static void inicializarMatriz(int mat[][]) {
+        for (int i = 0; i < 2; i++) {
+            mat[0][i] = numero;
+            mat[1][i] = numero;
+        }
     }
 
     /* metodo para mostrar no terminal */
-    private static void mostraMtariz(int mat[][]) {
+    private static void mostraMatriz(int mat[][]) {
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat[i].length; j++) {
                 System.out.print(mat[i][j] + " ");
@@ -258,8 +258,8 @@ public class quadrado extends JPanel implements Runnable, ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (btnEsquerda.getModel().isArmed())
             direcao = 1;
-        if (btnDireita.getModel().isArmed()) 
-            direcao = 2;        
+        if (btnDireita.getModel().isArmed())
+            direcao = 2;
         if (btnBaixo.getModel().isArmed())
             direcao = 3;
         if (btnCima.getModel().isArmed())
